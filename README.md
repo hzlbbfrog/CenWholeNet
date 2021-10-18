@@ -63,7 +63,8 @@ You can access this [repo](https://https://github.com/ultralytics/yolov5) to get
 You are very welcomed to cite our paper!
 
 # Contact Us
-Because I have been busy these days, code is not optimized very well and some notes may be in Chinese. I am very sorry for that.  
+Because I have been busy these days, code is not optimized very well and some notes may be in Chinese.  
+I am very sorry for that.  
 However, if you have any questions, please do not hesitate to contact me!
 
 
