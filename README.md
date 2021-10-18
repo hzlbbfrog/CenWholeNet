@@ -20,6 +20,7 @@ Or, you can "Download ZIP".
 
 3. Compile DCN and nms
 You can refer to [CenterNet](https://github.com/xingyizhou/CenterNet/) to compile DCN and nms in advance.
+By the way, CenWholeNet follows CenterNet directly. It is easy to write out CenWholeNet based on CenterNet. (facepalm)
 
 4. Rewrite Damage.py  
 For your own data set, you should rewrite **Damage.py**.
