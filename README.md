@@ -44,7 +44,7 @@ python test.py --log_name Resnet18 --arch resnet
 python test.py --log_name Resnet18_PAM --arch resnet_PAM
 ~~~
 
-# CenterNet
+# About CenterNet
 The official [repo](https://github.com/xingyizhou/CenterNet/) was not adopted because of some reasons.  
 A [simple pytorch implementation version](https://github.com/zzzxxxttt/pytorch_simple_CenterNet_45) was used, which is **simpler and easier** to read.  
 What's more, a detailed compilation process is introduced in that repo. O(∩_∩)O  
