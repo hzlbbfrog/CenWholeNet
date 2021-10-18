@@ -181,7 +181,7 @@ def main():
       reg_loss = _SmoothL1Loss(regs, batch['regs'], batch['ind_masks'])
       pxpy_loss = _reg_loss(pxpy, batch['pxpy'], batch['ind_masks'])
       w_h_loss = _SmoothL1Loss(w_h_, batch['w_h_'], batch['ind_masks'])
-      loss = hmap_loss + 10* reg_loss + 0.1 * w_h_loss + 0.1 * pxpy_loss
+      loss = hmap_loss + 10 * reg_loss + 0.1 * w_h_loss + 0.1 * pxpy_loss
 
       optimizer.zero_grad()
       loss.backward()

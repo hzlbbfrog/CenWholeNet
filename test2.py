@@ -173,7 +173,7 @@ def main():
           if (y1<0):
              y1 = 0
           if (y2>511):
-            y2 = 510
+            y2 = 511
           
           if score > 0.2:
             plt.gca().add_patch(Rectangle((x1, y1), x2 - x1, y2 - y1, linewidth=2, edgecolor=colors[lab], facecolor='none'))
