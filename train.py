@@ -40,12 +40,10 @@ parser = argparse.ArgumentParser(description='simple_centernet45')
 
 parser.add_argument('--local_rank', type=int, default=0)
 parser.add_argument('--dist', action='store_true')
-
 parser.add_argument('--root_dir', type=str, default='./')
 parser.add_argument('--data_dir', type=str, default='./data')
 parser.add_argument('--log_name', type=str, default='test') 
 parser.add_argument('--pretrain_name', type=str, default='pretrain')
-
 parser.add_argument('--dataset', type=str, default='Damage', choices=['coco', 'pascal','Damage'])
 parser.add_argument('--arch', type=str, default='resnet') 
 # resnet resdcn small_hourglass（1层） large_hourglass（2层） 
@@ -53,14 +51,11 @@ parser.add_argument('--arch', type=str, default='resnet')
 
 parser.add_argument('--img_size', type=int, default=512) # 512*512
 parser.add_argument('--split_ratio', type=float, default=1.0)
-
 parser.add_argument('--lr', type=float, default=5e-4)
 parser.add_argument('--lr_step', type=str, default='90,120')
 parser.add_argument('--batch_size', type=int, default=2) # mini batch
 parser.add_argument('--num_epochs', type=int, default=60)
-
 parser.add_argument('--test_topk', type=int, default=50)
-
 parser.add_argument('--log_interval', type=int, default=25) 
 parser.add_argument('--val_interval', type=int, default=5)
 parser.add_argument('--num_workers', type=int, default=2)

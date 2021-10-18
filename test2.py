@@ -32,7 +32,7 @@ from nets.resdcn import get_pose_net_resdcn
 from nets.resnet import get_pose_net 
 from nets.resnet_CBAM import get_pose_net_resnet_CBAM 
 from nets.resnet_PAM import get_pose_net_resnet_PAM
-from nets.resnet_SE import get_pose_net_resnet_SE 
+from nets.resnet_SE import get_pose_net_resnet_SE
 
 from utils.utils import load_model
 from utils.image import transform_preds
@@ -49,17 +49,12 @@ parser = argparse.ArgumentParser(description='centernet')
 parser.add_argument('--root_dir', type=str, default='./')
 parser.add_argument('--data_dir', type=str, default='./data')
 parser.add_argument('--log_name', type=str, default='pascal_resdcn18_512')
-
 parser.add_argument('--dataset', type=str, default='Damage', choices=['coco', 'pascal','Damage'])
 parser.add_argument('--arch', type=str, default='resnet')
-
 parser.add_argument('--img_size', type=int, default=512) 
-
 parser.add_argument('--test_flip', action='store_true')
 parser.add_argument('--test_scales', type=str, default='1')  # 0.5,0.75,1,1.25,1.5
-
 parser.add_argument('--test_topk', type=int, default=100)
-
 parser.add_argument('--num_workers', type=int, default=1)
 
 cfg = parser.parse_args()
@@ -168,11 +163,13 @@ def main():
       for lab in bbox_and_scores: 
         for boxes in bbox_and_scores[lab]: 
           x1, y1, x2, y2, score = boxes
-          if (x1<0):
-             x1 = 0
-          if (y1<0):
-             y1 = 0
-          if (y2>511):
+          if (x1 < 0):
+            x1 = 0
+          if (y1 < 0):
+            y1 = 0
+          if (x2 > 511):
+            x2 = 511
+          if (y2 > 511):
             y2 = 511
           
           if score > 0.2:

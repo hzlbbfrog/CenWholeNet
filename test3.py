@@ -48,17 +48,12 @@ parser = argparse.ArgumentParser(description='centernet')
 parser.add_argument('--root_dir', type=str, default='./')
 parser.add_argument('--data_dir', type=str, default='./data')
 parser.add_argument('--log_name', type=str, default='pascal_resdcn18_512')
-
 parser.add_argument('--dataset', type=str, default='Damage', choices=['coco', 'pascal','Damage'])
 parser.add_argument('--arch', type=str, default='resnet')
-
 parser.add_argument('--img_size', type=int, default=512) 
-
 parser.add_argument('--test_flip', action='store_true')
 parser.add_argument('--test_scales', type=str, default='1')  # 0.5,0.75,1,1.25,1.5
-
 parser.add_argument('--test_topk', type=int, default=100)
-
 parser.add_argument('--num_workers', type=int, default=1)
 
 cfg = parser.parse_args()
