@@ -1,8 +1,6 @@
 # CenWholeNet
-Automatic damage detection using anchor-free method and unmanned surface vessel
-Zhili He, Shang Jiang, Jian Zhang and Gang Wu. Our paper is available.
-
-The codes will be available after the paper is accepted.
+Automatic damage detection using anchor-free method and unmanned surface vessel. Automation in Construction. 133 (2022) 104017,  
+by Zhili He, Shang Jiang, Jian Zhang and Gang Wu. [Our paper](https://www.sciencedirect.com/science/article/pii/S0926580521004684/) is available.
 
 # Usage
 1. Requirements
@@ -44,6 +42,10 @@ python test.py --log_name Resnet18 --arch resnet
 ~~~
 python test.py --log_name Resnet18_PAM --arch resnet_PAM
 ~~~
+
+7. About the demo data  
+A reviewer ever mentioned that the images in the paper all include only one kind of defects. We synthesized some images with multiple types of defects.
+The results corroborate that the proposed methods have certain generalization ability. We want to extend our gratitude to the anonymous reviewer.
 
 # About CenterNet
 The official [repo](https://github.com/xingyizhou/CenterNet/) was not adopted because of some reasons.  
