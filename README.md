@@ -1,6 +1,5 @@
 # CenWholeNet
-Automatic damage detection using anchor-free method and unmanned surface vessel. Automation in Construction. 133 (2022) 104017,  
-by Zhili He, Shang Jiang, Jian Zhang and Gang Wu. [Our paper](https://www.sciencedirect.com/science/article/pii/S0926580521004684/) is available.
+Automatic damage detection using anchor-free method and unmanned surface vessel, Automation in Construction, 133 (2022) 104017, by Zhili He, Shang Jiang, Jian Zhang and Gang Wu. [Our paper](https://www.sciencedirect.com/science/article/pii/S0926580521004684/) is available.
 
 # Usage
 1. Requirements
