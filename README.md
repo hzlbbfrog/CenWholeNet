@@ -68,6 +68,3 @@ You are very welcomed to cite our paper!
 Because I have been busy these days, code is not optimized very well and some notes may be in Chinese.  
 I am really sorry for that.  
 However, if you have any questions, please do not hesitate to contact me!
-
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=hzlbbfrog&repo=github-readme-stats)](https://github.com/anuraghazra/github-readme-stats)
-
